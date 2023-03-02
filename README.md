@@ -385,7 +385,23 @@ $ git rebase master
 
 >rebase – процесс перемещения или объединения последовательности коммитов в новый базовый коммит
 
-Чуть-чуть меняем код. Закоммитим
+Чуть-чуть меняем код:
+
+```
+include <iostream>
+include <string>
+
+int main() 
+{
+    string str; // имя :-(
+    getline(std::cin, str); // читаем имя (-_-)
+    std::cout << "Hello World from " << str;
+    std::cout << endl;
+    return 0;
+}
+```
+
+Закоммитим
 
 ```
 $ edit "hello_world.cpp"
